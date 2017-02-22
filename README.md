@@ -2,7 +2,7 @@
 
 Simplest possible example of an app and XCode unit tests that use the [NabtoClient Cocoapod](http://cocoapods.org/pods/NabtoClient).
 
-First, if you have not install Cocoapods, do so: `sudo gem install cocoapods`
+First, if you have not installed Cocoapods, do so: `sudo gem install cocoapods`
 
 Next, run `pod install`.
 
