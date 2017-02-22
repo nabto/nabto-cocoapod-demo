@@ -9,59 +9,51 @@
 #import <XCTest/XCTest.h>
 #import "NabtoClient/NabtoClient.h"
 
+#define TEST_DEVICE_INTERFACE_XML \
+       "<unabto_queries>" \
+       "  <query name='wind_speed.json' id='2'>" \
+       "    <request></request>" \
+       "    <response format='json'>" \
+       "      <parameter name='rpc_speed_m_s' type='uint32'/>" \
+       "    </response>" \
+       "  </query>" \
+       "</unabto_queries>"
+
 @interface NabtoCocoapodDemoTests : XCTestCase
 
 @end
 
 @implementation NabtoCocoapodDemoTests
 
-
-
-- (void)testObjCWrapperFromDocs {
-    if ([[NabtoClient instance] nabtoStartup] != NABTO_OK) {
-        // handle error
-    }
-    if ([[NabtoClient instance] nabtoOpenSessionGuest] != NABTO_OK) {
-        // handle error
-    }
-    
-    NSString* interfaceXml = @"<unabto_queries><query name='wind_speed.json' id='2'><request></request><response format='json'><parameter name='rpc_speed_m_s' type='uint32'/></response></query></unabto_queries>";
-    
+- (void)testObjCWrapper {
+    XCTAssertEqual([[NabtoClient instance] nabtoStartup], NABTO_OK);
+    XCTAssertEqual([[NabtoClient instance] nabtoOpenSessionGuest], NABTO_OK);
     char* errorMsg;
-    if ([[NabtoClient instance] nabtoRpcSetDefaultInterface:interfaceXml withErrorMessage:&errorMsg] != NABTO_OK) {
-        // handle error
-    }
+    XCTAssertEqual([[NabtoClient instance] nabtoRpcSetDefaultInterface:@(TEST_DEVICE_INTERFACE_XML)
+                                                      withErrorMessage:&errorMsg],NABTO_OK);
     
     char* json;
-    nabto_status_t status = [[NabtoClient instance] nabtoRpcInvoke:@"nabto://demo.nabto.net/wind_speed.json?" withResultBuffer:&json];
-    if (status == NABTO_OK) {
-        NSLog(@"rpcInvoke from docs finished with result: %s", json);
-        nabtoFree(json);
-    }
+    XCTAssertEqual([[NabtoClient instance] nabtoRpcInvoke:@"nabto://demo.nabto.net/wind_speed.json?"
+                                         withResultBuffer:&json], NABTO_OK);
+    NSLog(@"rpcInvoke from docs finished with result: %s", json);
+    nabtoFree(json);
     
-    [[NabtoClient instance] nabtoShutdown];
+    XCTAssertEqual([[NabtoClient instance] nabtoShutdown], NABTO_OK);
 }
 
 - (void)testNativeSdk {
     XCTAssertEqual(nabtoStartup(NULL), NABTO_OK);
     nabto_handle_t session;
     XCTAssertEqual(nabtoOpenSession(&session, "guest", "123456"), NABTO_OK);
+    char* error;
+    XCTAssertEqual(nabtoRpcSetDefaultInterface(session, TEST_DEVICE_INTERFACE_XML, &error), NABTO_OK);
+
     char* result;
-    size_t len;
-    char* mimeType;
-    nabto_status_t status;
-    status = nabtoFetchUrl(session, "nabto://demo.nabto.net/wind_speed.json?", &result, &len, &mimeType);
-    if (status == NABTO_OK) {
-        NSData *data = [NSData dataWithBytes:result length:len];
-        NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        NSLog(@"fetchUrl finished with result: %@", str);
-        XCTAssertTrue([str containsString:@"speed_m_s"]);
-        nabtoFree(result);
-        nabtoFree(mimeType);
-    } else {
-        NSLog(@"fetchUrl finished with status %d", status);
-    }
-    XCTAssertEqual(status, NABTO_OK);
+    XCTAssertEqual(nabtoRpcInvoke(session, "nabto://demo.nabto.net/wind_speed.json?", &result), NABTO_OK);
+    NSLog(@"fetchUrl finished with result: %s", result);
+    NSString* str = @(result);
+    nabtoFree(result);
+    XCTAssertTrue([str containsString:@"rpc_speed_m_s"]);
 }
 
 @end

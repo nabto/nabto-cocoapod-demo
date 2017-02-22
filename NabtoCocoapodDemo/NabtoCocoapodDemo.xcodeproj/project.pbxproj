@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4610976C789794403FFE148C /* libPods-NabtoCocoapodDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D4B3EF1841DA63DD3A0921 /* libPods-NabtoCocoapodDemo.a */; };
+		159FADC8F65881104213FF9D /* Pods_NabtoCocoapodDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036991A52BD69C9525110203 /* Pods_NabtoCocoapodDemo.framework */; };
 		605040C31E5DEF8100E9FC5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 605040C21E5DEF8100E9FC5D /* main.m */; };
 		605040C61E5DEF8100E9FC5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 605040C51E5DEF8100E9FC5D /* AppDelegate.m */; };
 		605040C91E5DEF8100E9FC5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 605040C81E5DEF8100E9FC5D /* ViewController.m */; };
@@ -15,6 +15,7 @@
 		605040CE1E5DEF8100E9FC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 605040CD1E5DEF8100E9FC5D /* Assets.xcassets */; };
 		605040D11E5DEF8100E9FC5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 605040CF1E5DEF8100E9FC5D /* LaunchScreen.storyboard */; };
 		605040DC1E5DEF8200E9FC5D /* NabtoCocoapodDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 605040DB1E5DEF8200E9FC5D /* NabtoCocoapodDemoTests.m */; };
+		ED835E682B0A96DBC47C620B /* Pods_NabtoCocoapodDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533F7852033D2F7A543B6481 /* Pods_NabtoCocoapodDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036991A52BD69C9525110203 /* Pods_NabtoCocoapodDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NabtoCocoapodDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		234957A73B1ED7E8E1AA74B8 /* Pods-NabtoCocoapodDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NabtoCocoapodDemoTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NabtoCocoapodDemoTests/Pods-NabtoCocoapodDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		533F7852033D2F7A543B6481 /* Pods_NabtoCocoapodDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NabtoCocoapodDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		605040BE1E5DEF8100E9FC5D /* NabtoCocoapodDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NabtoCocoapodDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		605040C21E5DEF8100E9FC5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		605040C41E5DEF8100E9FC5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,7 +47,7 @@
 		605040DD1E5DEF8200E9FC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D4FCC25E9DB2A1191FECEB8 /* Pods-NabtoCocoapodDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NabtoCocoapodDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NabtoCocoapodDemo/Pods-NabtoCocoapodDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7BEEB1F881E5F40FBF7ACF01 /* Pods-NabtoCocoapodDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NabtoCocoapodDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NabtoCocoapodDemo/Pods-NabtoCocoapodDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		88D4B3EF1841DA63DD3A0921 /* libPods-NabtoCocoapodDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NabtoCocoapodDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BBE0AE065E0BC1E20870A1 /* Pods-NabtoCocoapodDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NabtoCocoapodDemoTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NabtoCocoapodDemoTests/Pods-NabtoCocoapodDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4610976C789794403FFE148C /* libPods-NabtoCocoapodDemo.a in Frameworks */,
+				159FADC8F65881104213FF9D /* Pods_NabtoCocoapodDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED835E682B0A96DBC47C620B /* Pods_NabtoCocoapodDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +75,8 @@
 			children = (
 				7BEEB1F881E5F40FBF7ACF01 /* Pods-NabtoCocoapodDemo.debug.xcconfig */,
 				6D4FCC25E9DB2A1191FECEB8 /* Pods-NabtoCocoapodDemo.release.xcconfig */,
+				F8BBE0AE065E0BC1E20870A1 /* Pods-NabtoCocoapodDemoTests.debug.xcconfig */,
+				234957A73B1ED7E8E1AA74B8 /* Pods-NabtoCocoapodDemoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -77,7 +84,8 @@
 		199EB7BDA13862B13453889F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				88D4B3EF1841DA63DD3A0921 /* libPods-NabtoCocoapodDemo.a */,
+				036991A52BD69C9525110203 /* Pods_NabtoCocoapodDemo.framework */,
+				533F7852033D2F7A543B6481 /* Pods_NabtoCocoapodDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 605040E31E5DEF8200E9FC5D /* Build configuration list for PBXNativeTarget "NabtoCocoapodDemoTests" */;
 			buildPhases = (
+				907AAD1837CFFDEA57FA0E53 /* [CP] Check Pods Manifest.lock */,
 				605040D31E5DEF8200E9FC5D /* Sources */,
 				605040D41E5DEF8200E9FC5D /* Frameworks */,
 				605040D51E5DEF8200E9FC5D /* Resources */,
+				A04D9F1CC1D20625C3E4CA19 /* [CP] Embed Pods Frameworks */,
+				E99F7F43ADD6149964F37016 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +264,36 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NabtoCocoapodDemo/Pods-NabtoCocoapodDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		907AAD1837CFFDEA57FA0E53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A04D9F1CC1D20625C3E4CA19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NabtoCocoapodDemoTests/Pods-NabtoCocoapodDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AF09FA37FC8DE461164A2E6B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +322,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NabtoCocoapodDemo/Pods-NabtoCocoapodDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E99F7F43ADD6149964F37016 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NabtoCocoapodDemoTests/Pods-NabtoCocoapodDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -452,6 +508,7 @@
 		};
 		605040E41E5DEF8200E9FC5D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8BBE0AE065E0BC1E20870A1 /* Pods-NabtoCocoapodDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = E55K8RCV2E;
@@ -465,6 +522,7 @@
 		};
 		605040E51E5DEF8200E9FC5D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234957A73B1ED7E8E1AA74B8 /* Pods-NabtoCocoapodDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = E55K8RCV2E;
