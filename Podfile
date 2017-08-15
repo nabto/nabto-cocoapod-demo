@@ -4,7 +4,7 @@ project 'NabtoCocoapodDemo/NabtoCocoapodDemo.xcodeproj/'
 # platform :ios, '9.0'
 
 def common
-  pod 'NabtoClient', '3.0.15'
+  pod 'NabtoClient', '4.1.3'
 end
 
 target 'NabtoCocoapodDemo' do
