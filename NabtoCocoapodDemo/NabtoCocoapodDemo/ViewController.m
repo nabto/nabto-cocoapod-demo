@@ -23,7 +23,7 @@
     char* json;
     nabto_status_t status = [[NabtoClient instance] nabtoRpcInvoke:@"nabto://demo.nabto.net/wind_speed.json?" withResultBuffer:&json];
     if (status == NABTO_OK) {
-        NSLog(@"rpcInvoke finished with result: %s", json);
+        NSLog(@"Nabto %@ rpcInvoke finished with result: %s", [[NabtoClient instance] nabtoVersionString], json);
         nabtoFree(json);
     }
     
