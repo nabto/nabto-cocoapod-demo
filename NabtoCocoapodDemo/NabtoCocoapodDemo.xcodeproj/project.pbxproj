@@ -467,6 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E55K8RCV2E;
 				INFOPLIST_FILE = NabtoCocoapodDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nabto.NabtoCocoapodDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,6 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E55K8RCV2E;
 				INFOPLIST_FILE = NabtoCocoapodDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nabto.NabtoCocoapodDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -533,6 +535,7 @@
 				605040E21E5DEF8200E9FC5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		605040E31E5DEF8200E9FC5D /* Build configuration list for PBXNativeTarget "NabtoCocoapodDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +544,7 @@
 				605040E51E5DEF8200E9FC5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
