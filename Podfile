@@ -1,10 +1,10 @@
 project 'NabtoCocoapodDemo/NabtoCocoapodDemo.xcodeproj/'
 
 # Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+platform :ios, '11.0'
 
 def common
-  pod 'NabtoClient', '4.3.0'
+  pod 'NabtoClient', '5.0.0'
 end
 
 target 'NabtoCocoapodDemo' do
