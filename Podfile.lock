@@ -1,16 +1,16 @@
 PODS:
-  - NabtoClient (4.4.0-beta1)
+  - NabtoClient (5.1.0)
 
 DEPENDENCIES:
-  - NabtoClient (= 4.4.0-beta.1)
+  - NabtoClient (= 5.1.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - NabtoClient
 
 SPEC CHECKSUMS:
-  NabtoClient: 27e4b79ca6a61033cb1d3c39aa80b4be1ce4c7f3
+  NabtoClient: 3484a1ffaba2e95bd28ea7d96c6f2035937a1ebd
 
-PODFILE CHECKSUM: bf3c1123f1d6e00a47dfa042330eba6204d4ed31
+PODFILE CHECKSUM: 388574d433509ef5345d664d4a685625f99b1caf
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.9.0.beta.3

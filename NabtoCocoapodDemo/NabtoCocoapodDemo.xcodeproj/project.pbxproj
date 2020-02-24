@@ -271,7 +271,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-NabtoCocoapodDemoTests/Pods-NabtoCocoapodDemoTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-NabtoCocoapodDemoTests/Pods-NabtoCocoapodDemoTests-frameworks.sh",
 				"${PODS_ROOT}/NabtoClient/NabtoClient.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -280,7 +280,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NabtoCocoapodDemoTests/Pods-NabtoCocoapodDemoTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NabtoCocoapodDemoTests/Pods-NabtoCocoapodDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AF09FA37FC8DE461164A2E6B /* [CP] Check Pods Manifest.lock */ = {
@@ -307,7 +307,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-NabtoCocoapodDemo/Pods-NabtoCocoapodDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-NabtoCocoapodDemo/Pods-NabtoCocoapodDemo-frameworks.sh",
 				"${PODS_ROOT}/NabtoClient/NabtoClient.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -316,7 +316,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NabtoCocoapodDemo/Pods-NabtoCocoapodDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NabtoCocoapodDemo/Pods-NabtoCocoapodDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

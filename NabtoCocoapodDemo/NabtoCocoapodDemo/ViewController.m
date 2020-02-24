@@ -26,7 +26,15 @@
         NSLog(@"Nabto %@ rpcInvoke finished with result: %s", [[NabtoClient instance] nabtoVersionString], json);
         [[NabtoClient instance] nabtoFree:json];
     }
-    
+    NabtoTunnelHandle tunnel;
+    NabtoTunnelState state;
+    if ([[NabtoClient instance] nabtoTunnelOpenTcp:&tunnel toHost:@"streamdemo.nabto.net" onPort:80] == NCS_OK) {
+        NSLog(@"Tunnel opened ok");
+        [[NabtoClient instance] nabtoTunnelWait:tunnel pollPeriodMillis:10 timeoutMillis:5000 resultingState:&state];
+        NSLog(@"Tunnel connection status is [%@]", [NabtoClient nabtoTunnelInfoString:state]);
+    } else {
+        NSLog(@"Tunnel could not be opened");
+    }
     [[NabtoClient instance] nabtoShutdown];
 }
 
